@@ -1,0 +1,34 @@
+{
+  "parameter_origin": "fitted",
+  "number_format": "fp8",
+  "evaluation": {
+    "reference_function": "rsqrt",
+    "ref_input_mode": "quantized"
+  },
+  "parameter_bridge": {
+    "forward_context_keys": ["n"]
+  },
+  "normalization": {
+    "mode": "rsqrt_pow4",
+    "c": -1.5,
+    "si": 4.0,
+    "k": 0
+  },
+  "horner": {
+    "N": 6,
+    "coeffs": [
+      3.75,
+      -8.0,
+      8.0,
+      -4.5,
+      2.0,
+      -1.0,
+      0.8125
+    ]
+  },
+  "denormalization": {
+    "c": 0.0,
+    "di": 1.0,
+    "k": 0
+  }
+}

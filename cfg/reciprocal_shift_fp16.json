@@ -1,0 +1,105 @@
+{
+  "number_format": "fp16",
+  "evaluation": {
+    "reference_function": "reciprocal",
+    "ref_input_mode": "quantized"
+  },
+  "segments": [
+    {
+      "name": "seg_shift_k0",
+      "domain": {
+        "x_min": 0.5,
+        "x_max": 1.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -0.78125,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 7,
+        "coeffs": [
+          -7.20703125,
+          5.62890625,
+          -4.3984375,
+          3.435546875,
+          -2.68359375,
+          2.09765625,
+          -1.638671875,
+          1.2802734375
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_shift_k1",
+      "domain": {
+        "x_min": 1.0,
+        "x_max": 2.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -1.5625,
+        "si": 1.0,
+        "k": 1
+      },
+      "horner": {
+        "N": 7,
+        "coeffs": [
+          -7.20703125,
+          5.62890625,
+          -4.3984375,
+          3.435546875,
+          -2.68359375,
+          2.09765625,
+          -1.638671875,
+          1.2802734375
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 1
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_shift_k2",
+      "domain": {
+        "x_min": 2.0,
+        "x_max": 4.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -3.125,
+        "si": 1.0,
+        "k": 2
+      },
+      "horner": {
+        "N": 7,
+        "coeffs": [
+          -7.20703125,
+          5.62890625,
+          -4.3984375,
+          3.435546875,
+          -2.68359375,
+          2.09765625,
+          -1.638671875,
+          1.2802734375
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 2
+      },
+      "parameter_bridge": {}
+    }
+  ]
+}

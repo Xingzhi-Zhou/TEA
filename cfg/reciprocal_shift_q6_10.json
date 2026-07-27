@@ -1,0 +1,108 @@
+{
+  "number_format": "q6_10",
+  "evaluation": {
+    "reference_function": "reciprocal",
+    "ref_input_mode": "quantized"
+  },
+  "segments": [
+    {
+      "name": "seg_shift_k0",
+      "domain": {
+        "x_min": 0.5,
+        "x_max": 1.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -0.8125,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 8,
+        "coeffs": [
+          6.48046875,
+          -5.265625,
+          4.2783203125,
+          -3.4755859375,
+          2.82421875,
+          -2.294921875,
+          1.8642578125,
+          -1.5146484375,
+          1.23046875
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_shift_k1",
+      "domain": {
+        "x_min": 1.0,
+        "x_max": 2.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -1.625,
+        "si": 1.0,
+        "k": 1
+      },
+      "horner": {
+        "N": 8,
+        "coeffs": [
+          6.48046875,
+          -5.265625,
+          4.2783203125,
+          -3.4755859375,
+          2.82421875,
+          -2.294921875,
+          1.8642578125,
+          -1.5146484375,
+          1.23046875
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 1
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_shift_k2",
+      "domain": {
+        "x_min": 2.0,
+        "x_max": 4.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -3.25,
+        "si": 1.0,
+        "k": 2
+      },
+      "horner": {
+        "N": 8,
+        "coeffs": [
+          6.48046875,
+          -5.265625,
+          4.2783203125,
+          -3.4755859375,
+          2.82421875,
+          -2.294921875,
+          1.8642578125,
+          -1.5146484375,
+          1.23046875
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 2
+      },
+      "parameter_bridge": {}
+    }
+  ]
+}

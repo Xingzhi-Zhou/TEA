@@ -1,0 +1,32 @@
+{
+  "parameter_origin": "fitted",
+  "number_format": "fp8",
+  "evaluation": {
+    "reference_function": "exp",
+    "ref_input_mode": "quantized"
+  },
+  "parameter_bridge": {
+    "forward_context_keys": ["n"]
+  },
+  "normalization": {
+    "mode": "exp_ln2",
+    "c": 0.0,
+    "si": 0.6875,
+    "k": 0
+  },
+  "horner": {
+    "N": 4,
+    "coeffs": [
+      0.04296875,
+      0.171875,
+      0.5,
+      1.0,
+      1.0
+    ]
+  },
+  "denormalization": {
+    "c": 0.0,
+    "di": 1.0,
+    "k": 0
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "parameter_origin": "paper_v1_quantized_fit",
+  "number_format": "q6_10",
+  "evaluation": {
+    "reference_function": "rsqrt",
+    "ref_input_mode": "quantized"
+  },
+  "parameter_bridge": {
+    "forward_context_keys": [
+      "n"
+    ]
+  },
+  "normalization": {
+    "mode": "rsqrt_pow4",
+    "c": -2.513671875,
+    "si": 2.66015625,
+    "k": 0
+  },
+  "horner": {
+    "N": 5,
+    "coeffs": [
+      -0.3798828125,
+      0.3466796875,
+      -0.203125,
+      0.25,
+      -0.3349609375,
+      0.630859375
+    ]
+  },
+  "denormalization": {
+    "c": 0.0,
+    "di": 1.0,
+    "k": 0
+  },
+  "fit_metadata": {
+    "release": "paper_v1",
+    "paper_domain": [
+      0.25,
+      16.0
+    ],
+    "paper_segments": 1,
+    "paper_max_order": 5,
+    "reference": "quantized",
+    "rounding": "round_to_nearest_even_after_each_stage",
+    "engine_cli_samples": 1001,
+    "dense_samples": 10001,
+    "max_error_protocol": "all_representable_inputs"
+  }
+}

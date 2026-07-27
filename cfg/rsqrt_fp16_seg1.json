@@ -1,0 +1,34 @@
+{
+  "parameter_origin": "fitted",
+  "number_format": "fp16",
+  "evaluation": {
+    "reference_function": "rsqrt",
+    "ref_input_mode": "quantized"
+  },
+  "parameter_bridge": {
+    "forward_context_keys": ["n"]
+  },
+  "normalization": {
+    "mode": "rsqrt_pow4",
+    "c": -2.62890625,
+    "si": 1.001953125,
+    "k": 0
+  },
+  "horner": {
+    "N": 6,
+    "coeffs": [
+      0.0011501312255859375,
+      -0.001979827880859375,
+      0.00209808349609375,
+      -0.0098114013671875,
+      0.034393310546875,
+      -0.11773681640625,
+      0.61669921875
+    ]
+  },
+  "denormalization": {
+    "c": 0.0,
+    "di": 1.0,
+    "k": 0
+  }
+}

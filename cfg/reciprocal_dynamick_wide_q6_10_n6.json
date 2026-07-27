@@ -1,0 +1,40 @@
+{
+  "number_format": "q6_10",
+  "evaluation": {
+    "reference_function": "reciprocal",
+    "ref_input_mode": "quantized"
+  },
+  "segments": [
+    {
+      "name": "seg_dynamic_k",
+      "domain": {
+        "x_min": 0.25,
+        "x_max": 16.0
+      },
+      "normalization": {
+        "mode": "reciprocal_pow2",
+        "c": -0.8125,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 6,
+        "coeffs": [
+          4.2783203125,
+          -3.4755859375,
+          2.82421875,
+          -2.294921875,
+          1.8642578125,
+          -1.5146484375,
+          1.23046875
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    }
+  ]
+}

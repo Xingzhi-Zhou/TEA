@@ -1,0 +1,41 @@
+{
+  "number_format": "fp16",
+  "evaluation": {
+    "reference_function": "reciprocal",
+    "ref_input_mode": "quantized"
+  },
+  "segments": [
+    {
+      "name": "seg_dynamic_k",
+      "domain": {
+        "x_min": 0.5,
+        "x_max": 4.0
+      },
+      "normalization": {
+        "mode": "reciprocal_pow2",
+        "c": -0.78125,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 7,
+        "coeffs": [
+          -7.20703125,
+          5.62890625,
+          -4.3984375,
+          3.435546875,
+          -2.68359375,
+          2.09765625,
+          -1.638671875,
+          1.2802734375
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    }
+  ]
+}

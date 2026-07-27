@@ -1,0 +1,54 @@
+{
+  "number_format": "fp8",
+  "evaluation": {
+    "reference_function": "reciprocal",
+    "ref_input_mode": "quantized"
+  },
+  "segments": [
+    {
+      "name": "seg_dynamic_k",
+      "domain": {
+        "x_min": 0.25,
+        "x_max": 16.0
+      },
+      "normalization": {
+        "mode": "reciprocal_pow2",
+        "c": -0.8125,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 5,
+        "coeffs": [
+          0.0,
+          0.0,
+          -2.25,
+          1.875,
+          -1.5,
+          1.25
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    }
+  ],
+  "parameter_origin": "paper_v1_quantized_fit",
+  "fit_metadata": {
+    "release": "paper_v1",
+    "paper_domain": [
+      0.25,
+      16.0
+    ],
+    "paper_segments": 1,
+    "paper_max_order": 5,
+    "reference": "quantized",
+    "rounding": "round_to_nearest_even_after_each_stage",
+    "engine_cli_samples": 1001,
+    "dense_samples": 10001,
+    "max_error_protocol": "all_representable_inputs"
+  }
+}

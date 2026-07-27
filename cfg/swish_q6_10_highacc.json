@@ -1,0 +1,460 @@
+{
+  "parameter_origin": "fitted",
+  "number_format": "q6_10",
+  "evaluation": {
+    "reference_function": "swish",
+    "ref_input_mode": "quantized"
+  },
+  "segments": [
+    {
+      "name": "seg_0",
+      "domain": {
+        "x_min": -6.0,
+        "x_max": -4.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": 5.0,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 5,
+        "coeffs": [
+          0.0,
+          0.0,
+          -0.001953125,
+          -0.009765625,
+          -0.0263671875,
+          -0.033203125
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_1",
+      "domain": {
+        "x_min": -4.0,
+        "x_max": -3.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": 3.5,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 5,
+        "coeffs": [
+          0.0009765625,
+          0.0009765625,
+          0.0,
+          -0.0185546875,
+          -0.0703125,
+          -0.1025390625
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_2",
+      "domain": {
+        "x_min": -3.0,
+        "x_max": -2.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": 2.5,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 5,
+        "coeffs": [
+          0.0009765625,
+          0.005859375,
+          0.0126953125,
+          -0.00390625,
+          -0.099609375,
+          -0.189453125
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_3",
+      "domain": {
+        "x_min": -2.0,
+        "x_max": -1.5
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": 1.75,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 5,
+        "coeffs": [
+          0.0,
+          0.0087890625,
+          0.03515625,
+          0.048828125,
+          -0.072265625,
+          -0.2587890625
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_4",
+      "domain": {
+        "x_min": -1.5,
+        "x_max": -1.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": 1.25,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 5,
+        "coeffs": [
+          -0.0029296875,
+          0.00390625,
+          0.0498046875,
+          0.11328125,
+          0.005859375,
+          -0.2783203125
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_5",
+      "domain": {
+        "x_min": -1.0,
+        "x_max": -0.5
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": 0.75,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 5,
+        "coeffs": [
+          -0.005859375,
+          -0.0068359375,
+          0.0478515625,
+          0.1884765625,
+          0.1572265625,
+          -0.240234375
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_6",
+      "domain": {
+        "x_min": -0.5,
+        "x_max": -0.25
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": 0.375,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 5,
+        "coeffs": [
+          -0.00390625,
+          -0.0166015625,
+          0.029296875,
+          0.2333984375,
+          0.31640625,
+          -0.15234375
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_7",
+      "domain": {
+        "x_min": -0.25,
+        "x_max": 0.25
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": 0.0,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 5,
+        "coeffs": [
+          0.0,
+          -0.0205078125,
+          0.0,
+          0.25,
+          0.5,
+          0.0
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_8",
+      "domain": {
+        "x_min": 0.25,
+        "x_max": 0.5
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -0.375,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 5,
+        "coeffs": [
+          0.00390625,
+          -0.0166015625,
+          -0.029296875,
+          0.2333984375,
+          0.68359375,
+          0.22265625
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_9",
+      "domain": {
+        "x_min": 0.5,
+        "x_max": 1.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -0.75,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 5,
+        "coeffs": [
+          0.005859375,
+          -0.0068359375,
+          -0.0478515625,
+          0.1884765625,
+          0.8427734375,
+          0.509765625
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_10",
+      "domain": {
+        "x_min": 1.0,
+        "x_max": 1.5
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -1.25,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 5,
+        "coeffs": [
+          0.0029296875,
+          0.00390625,
+          -0.0498046875,
+          0.11328125,
+          0.994140625,
+          0.9716796875
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_11",
+      "domain": {
+        "x_min": 1.5,
+        "x_max": 2.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -1.75,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 5,
+        "coeffs": [
+          0.0,
+          0.0087890625,
+          -0.03515625,
+          0.048828125,
+          1.072265625,
+          1.4912109375
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_12",
+      "domain": {
+        "x_min": 2.0,
+        "x_max": 3.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -2.5,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 5,
+        "coeffs": [
+          -0.0009765625,
+          0.005859375,
+          -0.0126953125,
+          -0.00390625,
+          1.099609375,
+          2.310546875
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_13",
+      "domain": {
+        "x_min": 3.0,
+        "x_max": 4.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -3.5,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 5,
+        "coeffs": [
+          -0.0009765625,
+          0.0009765625,
+          0.0,
+          -0.0185546875,
+          1.0703125,
+          3.3974609375
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_14",
+      "domain": {
+        "x_min": 4.0,
+        "x_max": 6.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -5.0,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 5,
+        "coeffs": [
+          0.0,
+          0.0,
+          0.001953125,
+          -0.009765625,
+          1.0263671875,
+          4.966796875
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    }
+  ]
+}

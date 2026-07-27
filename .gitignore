@@ -1,0 +1,46 @@
+# Python bytecode and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local Python environments
+.venv/
+venv/
+env/
+
+# Cocotb and simulator outputs
+sim_build/
+results.xml
+*.vvp
+*.fst
+*.vcd
+*.hex
+*.lxt
+*.lxt2
+*.wlf
+
+# FPGA tool outputs
+.Xil/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.jou
+*.str
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*~
+
+# Editor and operating-system metadata
+.agents/
+.codex/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

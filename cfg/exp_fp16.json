@@ -1,0 +1,50 @@
+{
+  "parameter_origin": "paper_v1_quantized_fit",
+  "number_format": "fp16",
+  "evaluation": {
+    "reference_function": "exp",
+    "ref_input_mode": "quantized"
+  },
+  "parameter_bridge": {
+    "forward_context_keys": [
+      "n"
+    ]
+  },
+  "normalization": {
+    "mode": "exp_ln2",
+    "c": 0.0,
+    "si": 0.693359375,
+    "k": 0
+  },
+  "horner": {
+    "N": 6,
+    "coeffs": [
+      0.0013885498046875,
+      0.008331298828125,
+      0.041656494140625,
+      0.1666259765625,
+      0.5,
+      1.0,
+      1.0
+    ]
+  },
+  "denormalization": {
+    "c": 0.0,
+    "di": 1.0,
+    "k": 0
+  },
+  "fit_metadata": {
+    "release": "paper_v1",
+    "paper_domain": [
+      -8.0,
+      0.0
+    ],
+    "paper_segments": 1,
+    "paper_max_order": 6,
+    "reference": "quantized",
+    "rounding": "round_to_nearest_even_after_each_stage",
+    "engine_cli_samples": 1001,
+    "dense_samples": 10001,
+    "max_error_protocol": "all_representable_inputs"
+  }
+}

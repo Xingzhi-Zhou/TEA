@@ -1,0 +1,489 @@
+{
+  "parameter_origin": "paper_v1_quantized_fit",
+  "number_format": "fp16",
+  "evaluation": {
+    "reference_function": "gelu",
+    "ref_input_mode": "quantized"
+  },
+  "segments": [
+    {
+      "name": "seg_0",
+      "domain": {
+        "x_min": -6.0,
+        "x_max": -4.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": 5.0,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 6,
+        "coeffs": [
+          -1.8894672393798828e-05,
+          -3.510713577270508e-05,
+          -2.5331974029541016e-05,
+          -2.0205974578857422e-05,
+          -1.7583370208740234e-05,
+          -7.808208465576172e-06,
+          -1.430511474609375e-06
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_1",
+      "domain": {
+        "x_min": -4.0,
+        "x_max": -3.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": 3.5,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 6,
+        "coeffs": [
+          -2.6941299438476562e-05,
+          -0.0008034706115722656,
+          -0.0024871826171875,
+          -0.00420379638671875,
+          -0.0044708251953125,
+          -0.0028209686279296875,
+          -0.0008144378662109375
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_2",
+      "domain": {
+        "x_min": -3.0,
+        "x_max": -2.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": 2.5,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 6,
+        "coeffs": [
+          0.001857757568359375,
+          0.0043182373046875,
+          0.0005154609680175781,
+          -0.0164337158203125,
+          -0.037261962890625,
+          -0.03759765625,
+          -0.01552581787109375
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_3",
+      "domain": {
+        "x_min": -2.0,
+        "x_max": -1.5
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": 1.75,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 6,
+        "coeffs": [
+          -0.002033233642578125,
+          0.007770538330078125,
+          0.0289764404296875,
+          0.023590087890625,
+          -0.04583740234375,
+          -0.11090087890625,
+          -0.07012939453125
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_4",
+      "domain": {
+        "x_min": -1.5,
+        "x_max": -1.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": 1.25,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 6,
+        "coeffs": [
+          -0.006622314453125,
+          -0.006237030029296875,
+          0.034210205078125,
+          0.0927734375,
+          0.039947509765625,
+          -0.1226806640625,
+          -0.132080078125
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_5",
+      "domain": {
+        "x_min": -1.0,
+        "x_max": -0.5
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": 0.75,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 6,
+        "coeffs": [
+          -0.002361297607421875,
+          -0.0225372314453125,
+          -0.004756927490234375,
+          0.12939453125,
+          0.2164306640625,
+          0.000774383544921875,
+          -0.169921875
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_6",
+      "domain": {
+        "x_min": -0.5,
+        "x_max": -0.25
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": 0.375,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 6,
+        "coeffs": [
+          0.0057373046875,
+          -0.019073486328125,
+          -0.047027587890625,
+          0.0897216796875,
+          0.345703125,
+          0.21435546875,
+          -0.1326904296875
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_7",
+      "domain": {
+        "x_min": -0.25,
+        "x_max": 0.25
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -0.0,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 6,
+        "coeffs": [
+          0.00983428955078125,
+          0.0,
+          -0.06646728515625,
+          -0.0,
+          0.39892578125,
+          0.5,
+          0.0
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_8",
+      "domain": {
+        "x_min": 0.25,
+        "x_max": 0.5
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -0.375,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 6,
+        "coeffs": [
+          0.0057373046875,
+          0.019073486328125,
+          -0.047027587890625,
+          -0.0897216796875,
+          0.345703125,
+          0.78564453125,
+          0.2423095703125
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_9",
+      "domain": {
+        "x_min": 0.5,
+        "x_max": 1.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -0.75,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 6,
+        "coeffs": [
+          -0.002361297607421875,
+          0.0225372314453125,
+          -0.004756927490234375,
+          -0.12939453125,
+          0.2164306640625,
+          0.9990234375,
+          0.580078125
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_10",
+      "domain": {
+        "x_min": 1.0,
+        "x_max": 1.5
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -1.25,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 6,
+        "coeffs": [
+          -0.006622314453125,
+          0.006237030029296875,
+          0.034210205078125,
+          -0.0927734375,
+          0.039947509765625,
+          1.123046875,
+          1.1181640625
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_11",
+      "domain": {
+        "x_min": 1.5,
+        "x_max": 2.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -1.75,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 6,
+        "coeffs": [
+          -0.002033233642578125,
+          -0.007770538330078125,
+          0.0289764404296875,
+          -0.023590087890625,
+          -0.04583740234375,
+          1.111328125,
+          1.6796875
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_12",
+      "domain": {
+        "x_min": 2.0,
+        "x_max": 3.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -2.5,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 6,
+        "coeffs": [
+          0.001857757568359375,
+          -0.0043182373046875,
+          0.0005154609680175781,
+          0.0164337158203125,
+          -0.037261962890625,
+          1.0380859375,
+          2.484375
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_13",
+      "domain": {
+        "x_min": 3.0,
+        "x_max": 4.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -3.5,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 6,
+        "coeffs": [
+          -2.6941299438476562e-05,
+          0.0008034706115722656,
+          -0.0024871826171875,
+          0.00420379638671875,
+          -0.0044708251953125,
+          1.0029296875,
+          3.5
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    },
+    {
+      "name": "seg_14",
+      "domain": {
+        "x_min": 4.0,
+        "x_max": 6.0
+      },
+      "normalization": {
+        "mode": "affine_shift",
+        "c": -5.0,
+        "si": 1.0,
+        "k": 0
+      },
+      "horner": {
+        "N": 6,
+        "coeffs": [
+          -1.8894672393798828e-05,
+          3.510713577270508e-05,
+          -2.5331974029541016e-05,
+          2.0205974578857422e-05,
+          -1.7583370208740234e-05,
+          1.0,
+          5.0
+        ]
+      },
+      "denormalization": {
+        "c": 0.0,
+        "di": 1.0,
+        "k": 0
+      },
+      "parameter_bridge": {}
+    }
+  ],
+  "fit_metadata": {
+    "release": "paper_v1",
+    "paper_domain": [
+      -6.0,
+      6.0
+    ],
+    "paper_segments": 15,
+    "paper_max_order": 6,
+    "reference": "quantized",
+    "rounding": "round_to_nearest_even_after_each_stage",
+    "engine_cli_samples": 1001,
+    "dense_samples": 10001,
+    "max_error_protocol": "all_representable_inputs"
+  }
+}
