@@ -1,5 +1,5 @@
 {
-  "parameter_origin": "paper_v1_quantized_fit",
+  "parameter_origin": "fp16_discrete_engine_optimized",
   "number_format": "fp16",
   "evaluation": {
     "reference_function": "exp",
@@ -12,20 +12,20 @@
   },
   "normalization": {
     "mode": "exp_ln2",
-    "c": 0.0,
+    "c": 0.00975799560546875,
     "si": 0.693359375,
     "k": 0
   },
   "horner": {
     "N": 6,
     "coeffs": [
-      0.0013885498046875,
-      0.008331298828125,
-      0.041656494140625,
-      0.1666259765625,
-      0.5,
-      1.0,
-      1.0
+      0.0013751983642578125,
+      0.003772735595703125,
+      0.01361083984375,
+      0.1611328125,
+      0.4951171875,
+      0.990234375,
+      0.990234375
     ]
   },
   "denormalization": {
@@ -34,7 +34,7 @@
     "k": 0
   },
   "fit_metadata": {
-    "release": "paper_v1",
+    "release": "fp16_exp_optimized",
     "paper_domain": [
       -8.0,
       0.0
