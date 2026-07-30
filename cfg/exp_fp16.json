@@ -1,5 +1,5 @@
 {
-  "parameter_origin": "fp16_discrete_engine_optimized",
+  "parameter_origin": "fp16_c0_discrete_engine_optimized",
   "number_format": "fp16",
   "evaluation": {
     "reference_function": "exp",
@@ -12,20 +12,20 @@
   },
   "normalization": {
     "mode": "exp_ln2",
-    "c": 0.00975799560546875,
+    "c": 0.0,
     "si": 0.693359375,
     "k": 0
   },
   "horner": {
     "N": 6,
     "coeffs": [
-      0.0013751983642578125,
-      0.003772735595703125,
-      0.01361083984375,
-      0.1611328125,
-      0.4951171875,
-      0.990234375,
-      0.990234375
+      0.00563812255859375,
+      -0.022979736328125,
+      0.028228759765625,
+      0.1798095703125,
+      0.50341796875,
+      0.99853515625,
+      0.99951171875
     ]
   },
   "denormalization": {
@@ -34,7 +34,7 @@
     "k": 0
   },
   "fit_metadata": {
-    "release": "fp16_exp_optimized",
+    "release": "fp16_exp_c0_optimized",
     "paper_domain": [
       -8.0,
       0.0
